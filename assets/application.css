@@ -1,0 +1,473 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/
+/* CSS Document */
+/* line 26, ../../app/assets/stylesheets/application.css.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 35, ../../app/assets/stylesheets/application.css.scss */
+body {
+  line-height: 1;
+  font-family: Tahoma;
+  font-size: 11px;
+  background: #474747;
+}
+
+/* line 41, ../../app/assets/stylesheets/application.css.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 44, ../../app/assets/stylesheets/application.css.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 48, ../../app/assets/stylesheets/application.css.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 52, ../../app/assets/stylesheets/application.css.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 55, ../../app/assets/stylesheets/application.css.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 58, ../../app/assets/stylesheets/application.css.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 61, ../../app/assets/stylesheets/application.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 65, ../../app/assets/stylesheets/application.css.scss */
+.cl {
+  clear: both !important;
+  border: none !important;
+  overflow: hidden !important;
+  display: block !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* line 78, ../../app/assets/stylesheets/application.css.scss */
+.cf:after {
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0px;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* line 87, ../../app/assets/stylesheets/application.css.scss */
+.cf {
+  display: inline-block;
+}
+
+/* line 90, ../../app/assets/stylesheets/application.css.scss */
+* html .cf {
+  height: 1%;
+}
+
+/* line 93, ../../app/assets/stylesheets/application.css.scss */
+.cf {
+  display: block;
+}
+/* line 96, ../../app/assets/stylesheets/application.css.scss */
+.cf a {
+  color: #AAF;
+}
+
+/* line 100, ../../app/assets/stylesheets/application.css.scss */
+li.cf {
+  display: list-item;
+}
+
+/* line 103, ../../app/assets/stylesheets/application.css.scss */
+#main {
+  margin: 0 auto;
+  background: #eaeae4;
+}
+
+/* line 107, ../../app/assets/stylesheets/application.css.scss */
+a {
+  color: #66F;
+}
+/* line 110, ../../app/assets/stylesheets/application.css.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*l*/
+/* line 115, ../../app/assets/stylesheets/application.css.scss */
+header {
+  height: 182px;
+  background-color: #b55127;
+  background-image: url(header_back.jpg);
+  background-repeat: none;
+  position: relative;
+}
+/* line 121, ../../app/assets/stylesheets/application.css.scss */
+header #fork {
+  position: absolute;
+  right: 0px;
+}
+/* line 125, ../../app/assets/stylesheets/application.css.scss */
+header #logo {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: Georgia;
+  font-style: italic;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 61px;
+  width: 334px;
+}
+
+/* line 138, ../../app/assets/stylesheets/application.css.scss */
+footer {
+  margin-top: 23px;
+}
+/* line 140, ../../app/assets/stylesheets/application.css.scss */
+footer #description {
+  background: #dad9d1;
+  min-height: 40px;
+  padding: 15px 82px 32px;
+  -moz-border-radius: 14px 14px 0 0;
+  -webkit-border-radius: 14px 14px 0 0;
+  border-radius: 14px 14px 0 0;
+}
+/* line 148, ../../app/assets/stylesheets/application.css.scss */
+footer #description .text {
+  color: #858585;
+  line-height: 1.6em;
+  padding-top: 1px;
+}
+/* line 153, ../../app/assets/stylesheets/application.css.scss */
+footer #description #license {
+  width: 836px;
+  margin: 0px auto;
+}
+/* line 158, ../../app/assets/stylesheets/application.css.scss */
+footer #copy {
+  background: #474747;
+  position: relative;
+  height: 73px;
+}
+/* line 162, ../../app/assets/stylesheets/application.css.scss */
+footer #copy #welcom {
+  width: 356px;
+  height: 59px;
+  color: #7b7b7b;
+  background: url(welcome_back.jpg) left 14px no-repeat;
+  margin: 0px auto;
+  position: relative;
+}
+/* line 169, ../../app/assets/stylesheets/application.css.scss */
+footer #copy #welcom #hello {
+  color: #7b7b7b;
+  text-decoration: none;
+  position: absolute;
+  right: 28px;
+  top: 31px;
+}
+/* line 176, ../../app/assets/stylesheets/application.css.scss */
+footer #copy #welcom #company {
+  position: absolute;
+  top: 31px;
+  left: 20px;
+}
+/* line 182, ../../app/assets/stylesheets/application.css.scss */
+footer #copy .sprites_l, footer #copy .sprites_r {
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  background: url(copy_back.jpg);
+}
+/* line 188, ../../app/assets/stylesheets/application.css.scss */
+footer #copy .sprites_l {
+  left: 0px;
+}
+/* line 191, ../../app/assets/stylesheets/application.css.scss */
+footer #copy .sprites_r {
+  right: 0px;
+  background-position: -13px 0px;
+}
+
+/*end l*/
+/* line 198, ../../app/assets/stylesheets/application.css.scss */
+.heade {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  background: url(description_head_back.jpg) repeat-x 0px 6px;
+  margin-bottom: 17px;
+}
+/* line 204, ../../app/assets/stylesheets/application.css.scss */
+.heade span {
+  background: #dad9d2;
+  padding: 0 9px;
+  position: relative;
+  top: 1px;
+}
+
+/* line 213, ../../app/assets/stylesheets/application.css.scss */
+#about, #downloand {
+  padding: 0 80px;
+}
+
+/* line 216, ../../app/assets/stylesheets/application.css.scss */
+#about {
+  height: 155px;
+  background: url(about_and_dowland_back.jpg) center top repeat-x;
+  color: #fff;
+}
+/* line 220, ../../app/assets/stylesheets/application.css.scss */
+#about .center_block {
+  width: 838px;
+  margin: 0 auto;
+}
+/* line 224, ../../app/assets/stylesheets/application.css.scss */
+#about .about, #about .works {
+  float: left;
+  width: 394px;
+  margin-top: 33px;
+}
+/* line 229, ../../app/assets/stylesheets/application.css.scss */
+#about .about {
+  margin-right: 50px;
+}
+/* line 232, ../../app/assets/stylesheets/application.css.scss */
+#about .heade {
+  margin-bottom: 8px;
+  background: none;
+}
+/* line 235, ../../app/assets/stylesheets/application.css.scss */
+#about .heade span {
+  background: none;
+  padding: 0 4px;
+  display: block;
+  margin-bottom: 0px;
+  position: relative;
+  top: 1px;
+}
+/* line 244, ../../app/assets/stylesheets/application.css.scss */
+#about .works .text {
+  padding-left: 0px;
+}
+/* line 247, ../../app/assets/stylesheets/application.css.scss */
+#about .text {
+  line-height: 1.6em;
+  padding-left: 5px;
+}
+/* line 251, ../../app/assets/stylesheets/application.css.scss */
+#about .sp {
+  width: 100%;
+}
+/* line 253, ../../app/assets/stylesheets/application.css.scss */
+#about .sp .t {
+  width: 7%;
+  background: none;
+  padding: 0 9px;
+  white-space: nowrap;
+}
+/* line 259, ../../app/assets/stylesheets/application.css.scss */
+#about .sp td {
+  background: url(about_head_back.jpg) repeat-x 0 6px;
+  width: 49%;
+}
+/* line 263, ../../app/assets/stylesheets/application.css.scss */
+#about .sp .l {
+  width: 44%;
+}
+
+/* line 269, ../../app/assets/stylesheets/application.css.scss */
+#downloand {
+  height: 93px;
+  padding-top: 21px;
+  background: url(about_and_dowland_back.jpg) left -155px repeat-x;
+  color: #fff;
+}
+/* line 274, ../../app/assets/stylesheets/application.css.scss */
+#downloand .dowloand {
+  height: 65px;
+  border: 1px solid #5e5e5e;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
+  width: 838px;
+  margin: 0 auto;
+}
+/* line 283, ../../app/assets/stylesheets/application.css.scss */
+#downloand #link {
+  float: left;
+  margin: 20px 0 0 18px;
+}
+/* line 286, ../../app/assets/stylesheets/application.css.scss */
+#downloand #link #zip, #downloand #link #rar {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  display: block;
+  float: left;
+  background: url(dowloand_a_back.png) left top no-repeat;
+  padding: 7px 0 8px 2px;
+  width: 102px;
+  text-align: center;
+}
+/* line 297, ../../app/assets/stylesheets/application.css.scss */
+#downloand #link #rar {
+  background-position: -104px 0px;
+  margin-left: 16px;
+}
+/* line 304, ../../app/assets/stylesheets/application.css.scss */
+#downloand #contact {
+  float: right;
+  margin-right: 19px;
+}
+/* line 307, ../../app/assets/stylesheets/application.css.scss */
+#downloand #contact .user {
+  float: left;
+  width: 187px;
+  margin: 5px 0 0 11px;
+}
+/* line 311, ../../app/assets/stylesheets/application.css.scss */
+#downloand #contact .user .foto {
+  float: left;
+}
+/* line 314, ../../app/assets/stylesheets/application.css.scss */
+#downloand #contact .user .name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 12px;
+}
+/* line 320, ../../app/assets/stylesheets/application.css.scss */
+#downloand #contact .user .email {
+  font-family: Georgia;
+  font-style: italic;
+  color: #aeaeae;
+  font-size: 12px;
+}
+
+/* line 329, ../../app/assets/stylesheets/application.css.scss */
+article {
+  min-height: 40px;
+  font: 13px helvetica,arial,freesans,clean,sans-serif;
+  line-height: 1.4em;
+  padding: 35px 82px 0;
+}
+/* line 335, ../../app/assets/stylesheets/application.css.scss */
+article .apparation {
+  background: url(block_line_back.jpg) left bottom repeat-x;
+  margin-bottom: 16px;
+  padding-bottom: 19px;
+}
+/* line 340, ../../app/assets/stylesheets/application.css.scss */
+article .center_block {
+  width: 836px;
+  margin: 0 auto;
+}
+/* line 344, ../../app/assets/stylesheets/application.css.scss */
+article p, article div.titles {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 348, ../../app/assets/stylesheets/application.css.scss */
+article p {
+  margin-top: 10px;
+}
+/* line 351, ../../app/assets/stylesheets/application.css.scss */
+article .block {
+  background: url(block_line_back.jpg) left bottom repeat-x;
+  margin-bottom: 16px;
+  padding-bottom: 19px;
+}
+/* line 356, ../../app/assets/stylesheets/application.css.scss */
+article pre {
+  background: #fff;
+  color: #666;
+  font: 12px 'Bitstream Vera Sans Mono','Courier',monospace;
+  line-height: 1.5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 14px 10px 14px;
+  margin: 10px 0 10px 0px;
+}
+/* line 367, ../../app/assets/stylesheets/application.css.scss */
+article .console.big {
+  margin-bottom: 13px;
+}
+/* line 370, ../../app/assets/stylesheets/application.css.scss */
+article h1, article h2 {
+  color: #671d1d;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1em;
+}
+/* line 379, ../../app/assets/stylesheets/application.css.scss */
+article .last {
+  margin: 15px 0 14px;
+}
+
+/* line 383, ../../app/assets/stylesheets/application.css.scss */
+.projects {
+  margin-top: 80px;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 388, ../../app/assets/stylesheets/application.css.scss */
+.projects a {
+  color: white;
+}
+pre code{display:block;padding:.5em;}pre code,pre .ruby .subst,pre .tag .title,pre .lisp .title{color:black}pre .string,pre .title,pre .constant,pre .parent,pre .tag .value,pre .rules .value,pre .rules .value .number,pre .preprocessor,pre .ruby .symbol,pre .ruby .symbol .string,pre .ruby .symbol .keyword,pre .ruby .symbol .keymethods,pre .instancevar,pre .aggregate,pre .template_tag,pre .django .variable,pre .smalltalk .class,pre .addition,pre .flow,pre .stream,pre .bash .variable,pre .apache .tag,pre .apache .cbracket,pre .tex .command,pre .tex .special,pre .erlang_repl .function_or_atom{color:#800}pre .comment,pre .annotation,pre .template_comment,pre .diff .header,pre .chunk{color:#888}pre .number,pre .date,pre .regexp,pre .literal,pre .smalltalk .symbol,pre .smalltalk .char,pre .go .constant,pre .change{color:#080}pre .label,pre .javadoc,pre .ruby .string,pre .decorator,pre .filter .argument,pre .localvars,pre .array,pre .attr_selector,pre .important,pre .pseudo,pre .pi,pre .doctype,pre .deletion,pre .envvar,pre .shebang,pre .apache .sqbracket,pre .nginx .built_in,pre .tex .formula,pre .erlang_repl .reserved,pre .input_number{color:#88F}pre .css .tag,pre .javadoctag,pre .phpdoc,pre .yardoctag{font-weight:bold}pre .keyword,pre .id,pre .phpdoc,pre .title,pre .built_in,pre .aggregate,pre .smalltalk .class,pre .winutils,pre .bash .variable,pre .apache .tag,pre .go .typename,pre .tex .command{font-weight:bold}pre .nginx .built_in{font-weight:normal}pre .xml .css,pre .xml .javascript,pre .xml .vbscript,pre .tex .formula{opacity:.5}
