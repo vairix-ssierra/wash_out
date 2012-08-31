@@ -94,16 +94,20 @@ module WashOut
 
     # This action generates the WSDL for defined SOAP methods.
     def _generate_wsdl
-      @map       = self.class.soap_actions
-      @namespace = WashOut::Engine.namespace
-      @name      = controller_path.gsub('/', '_')
+      @map        = self.class.soap_actions
+      @envelope   = WashOut::Engine.envelope
+      @attributes = WashOut::Engine.attributes
+      @namespace  = WashOut::Engine.namespace
+      @name       = controller_path.gsub('/', '_')
 
       render :template => 'wash_with_soap/wsdl', :layout => false
     end
 
     # Render a SOAP response.
     def _render_soap(result, options)
+      @envelope   = WashOut::Engine.envelope
       @namespace  = WashOut::Engine.namespace
+      @attributes = WashOut::Engine.attributes
       @operation  = soap_action = request.env['wash_out.soap_action']
       action_spec = self.class.soap_actions[soap_action][:out]
 

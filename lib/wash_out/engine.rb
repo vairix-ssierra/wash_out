@@ -1,10 +1,18 @@
 module WashOut
   class Engine < ::Rails::Engine
     class << self
+      attr_accessor :envelope
       attr_accessor :namespace
+      attr_accessor :attributes
       attr_accessor :snakecase, :snakecase_input, :camelize_wsdl
       attr_accessor :wsse_username, :wsse_password
     end
+
+    self.envelope = 'soap:Envelope'
+    self.attributes = {
+      "xmlns:xsd" => 'http://www.w3.org/2001/XMLSchema',
+      "xmlns:xsi" => 'http://www.w3.org/2001/XMLSchema-instance',
+    }
 
     self.namespace = 'urn:WashOut'
     self.snakecase = nil
@@ -26,5 +34,6 @@ module WashOut
         raise "Usage of wash_out.snakecase is deprecated. You should use wash_out.snakecase_input and wash_out.camelize_wsdl"
       end
     end
+
   end
 end

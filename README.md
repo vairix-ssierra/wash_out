@@ -151,7 +151,10 @@ Available properties are:
 * **namespace**: SOAP namespace to use. Default is `urn:WashOut`.
 * **snakecase**: *(DEPRECATED SINCE 0.4.0)* Determines if WashOut should modify parameters keys to snakecase. Default is `false`.
 * **snakecase_input**: Determines if WashOut should modify parameters keys to snakecase. Default is `false`.
-* **camelize_wsdl**: Determinse if WashOut should camelize types within WSDL and responses. Default is `false`.
+* **camelize_wsdl**: Determines if WashOut should camelize types within WSDL and responses. Default is `false`.
+
+* **envelope**: Determines the SOAP Envelope type of the responses. Default is `soap`.
+* **attributes**: (Hash) Determines the attributes specifications in the SOAP def. Default is `{"xmlns:xsd" => 'http://www.w3.org/2001/XMLSchema', "xmlns:xsi" => 'http://www.w3.org/2001/XMLSchema-instance' }`.
 
 ### Camelization
 
