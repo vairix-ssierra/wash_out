@@ -1,7 +1,38 @@
 module WashOutHelper
+
+  def response_data(xml, params)
+    params.each do |param|
+      tag_name = "#{@namespace}:#{param.name.uncapitalize}"
+
+      if !param.struct?
+        if !param.multiplied
+          xml.tag! tag_name, param.value
+        else
+          param.value = [] unless param.value.is_a?(Array)
+          param.value.each do |v|
+            xml.tag! tag_name, v
+          end
+        end
+      else
+        if !param.multiplied
+          xml.tag! tag_name do
+            response_data(xml, param.map)
+          end
+        else
+          param.map.each do |p|
+            xml.tag! tag_name do
+              response_data(xml, p.map)
+            end
+          end
+        end
+      end
+    end
+  end
+
+
   def wsdl_data(xml, params)
     params.each do |param|
-      tag_name = param.name
+      tag_name = "#{@namespace}:#{param.name.uncapitalize}"
 
       if !param.struct?
         if !param.multiplied
@@ -60,5 +91,11 @@ module WashOutHelper
     }
 
     extend_with.merge(data)
+  end
+end
+
+class String
+  def uncapitalize
+    self[0,1].downcase + self[1..-1]
   end
 end
